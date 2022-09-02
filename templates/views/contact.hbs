@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    {{>header}}
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    {{!-- {{>navbar}} --}}
+    <section>
+        <div class="content"style="color: white ;">
+            <p>Adress: Fictional address <br>Email: soyotions@gmail.com<br> Contact Number: 9876543210</p>
+            <hr size="3" noshade> <br>
+            <button onclick="Previous()" class="btn btn-danger">Go Back</button>
+            {{!-- <a href="https://www.google.com/maps/dir/Maharashtra+Institute+Of+Technology,+Gate+No,+Beed+Bypass+Road,+Satara+Deolai+Parisar,+Aurangabad,+Maharashtra/V8F8%2BJ8M+Bharat+Petroleum+Mahavir+Stambh+Baba+Petrol+Pump,+Adalat+Road,+Mahavir+Chowk,+Aurangabad,+Maharashtra+431001/@19.8619596,75.3034943,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bdb988c254eb873:0x4388791935b718e6!2m2!1d75.322037!2d19.8494163!1m5!1m1!1s0x3bdb98426f3544d5:0xfdc8a7c2f0bf1717!2m2!1d75.3157881!2d19.8740854"><button  class="btn btn-danger">Open Direction</button></a> --}}
+        </div>
+
+        <div class="content">
+            
+            <form class="form-control" action="mailto: soynotions@gmail.com" method="post" enctype="UTF-8">
+                <label>Your Name: </label>
+                <input class="form-control" type="text" name="YourName" value=""><br>
+                <label>Your Email: </label>
+                <input class="form-control" type="email" name="YourEmail" value="">
+                <br>
+                <label>Your Message: </label><br>
+                <textarea class="form-control" name="YourMessage" id="" cols="30" rows="10"></textarea>
+                <br><input class="form-control" type="submit" name=""><br>
+            </form>
+        </div>
+    </section>
+    <script>
+        function Previous() {
+            window.history.go(-1);
+        }
+    </script>
+</body>
+
+</html>

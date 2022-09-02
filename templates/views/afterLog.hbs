@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    
+</head>
+
+<body class="bgm-img">
+{{>navbarafter}}
+        {{place uID}}
+        <div class="container2">
+
+    <div class="row container2">
+      <div class="col-md-5 col-12 ovrl2">
+        <h1 class="par"> Transport & <br>Logistics <br>System</h1>
+        <p> Students Innovation For Better Transport And Logistics<br>
+          <br>
+          <form action="/products" method="get">
+          <div class="formbuilder-radio-group form-group field-gender" style="color: #fff;">
+                        <div class="mb-3">
+                          <label for="gender" class="formbuilder-radio-group-label">Vehicle Type (Vehicle must be motored) <span
+                              class="formbuilder-required">*</span></label>
+                          <div class="radio-group">
+                            <div class="formbuilder-radio-inline">
+                              <input name="wheels" access="false" id="gender-0" required="required" aria-required="true"
+                                value="Wheeler2" type="radio">
+                              <label for="gender-0">2 Wheeler</label>
+                            </div>
+                            <div class="formbuilder-radio-inline">
+                              <input name="wheels" access="false" id="gender-1" required="required" aria-required="true"
+                                value="WheelerBig" type="radio">
+                              <label for="gender-1">3/4 Wheeler</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+            <button type="submit" class="btn" style="background-color: rgb(233, 111, 34); outline:none;">Deliver</button>
+          </form>
+
+        </p>
+      </div>
+      <div class="col-md-5 col-12">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../css/img/bg.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../css/img/img4.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../css/img/img3.jpg" style="border-radius: 1rem;" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

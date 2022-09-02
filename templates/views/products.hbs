@@ -1,0 +1,53 @@
+{{!-- working on this page to fetch the data from products collection using schema defined in product.js and display
+--}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Products</title>
+    {{>header}}
+    <script src="../../public/updateOne.js" defer></script>
+</head>
+
+<body class="bgm-img">
+    {{>navbarafter}}
+
+    <div class="horCent">
+
+        <div class="itemsSr ovrl horCent" style="text-align: left; ">
+            <h1><u>Product List</u></h1>
+            {{!-- <a href="/products"><button class="btn btn-danger">sort</button></a> --}}
+{{!-- 
+            {{#if productList == null}}
+
+            {{#else}} --}}
+
+            {{#each productList}}
+            {{#if (isdefined remaining)}}
+            <div class="card " style="width: 50vw;">
+                <div class="card-body">
+                    <p class="card-text">Product Weight : {{productWeight}}</p>
+                    <p class="card-text">Source Address : {{sourceAddress}} <a href="{{sourceURL}}" target="_blank">
+                            Check on map</a></p>
+                    <p class="card-text">Destination Address : {{destinationAddress}} <a href="{{destinationURL}}"
+                            target="_blank"> Check on map</a></p>
+
+                    <a href="/products/st?prid={{productID}}"><button class="btn btn-danger">Deliver</button></a>
+                </div>
+            </div>
+            <br>
+            {{/if}}
+            {{/each}}
+
+            {{!-- {{/if}} --}}
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

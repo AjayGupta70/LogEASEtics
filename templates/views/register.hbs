@@ -1,0 +1,150 @@
+{{!-- {{>header}} --}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    {{>header}}
+
+</head>
+
+<body class="bgm-img">
+    {{>navbar}}
+{{!-- <div class="bgm-img"> --}}
+    <div class="horCent">
+    
+    <div class="itemsSr ovrl" style="text-align: left; ">
+
+            <h3 style="color: #ff7200;">REGISTRATION FORM</h3>
+            <form action="/register" class="pad2" method="post">
+                <div class="rendered-form">
+                    <div class="mb-3">
+                        <div class="formbuilder-text form-group field-firstname">
+                            <label for="firstname" class="formbuilder-text-label">First Name<span
+                                    class="formbuilder-required">*</span></label>
+
+                            <input type="text" placeholder="first name" class="form-control" name="firstname"
+                                access="false" id="firstname" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-middlename">
+                        <div class="mb-3">
+                            <label for="middlename" class="formbuilder-text-label">Middle Name</label>
+                            <input type="text" placeholder="middle name" class="form-control" name="middlename"
+                                access="false" id="middlename">
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-lastname">
+                        <div class="mb-3">
+                            <label for="lastname" class="formbuilder-text-label">Last Name<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="text" placeholder="last name" class="form-control" name="lastname"
+                                access="false" id="lastname" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-email">
+                        <div class="mb-3">
+                            <label for="email" class="formbuilder-text-label">E-mail<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="email" placeholder="your email address" class="form-control" name="email"
+                                access="false" id="email" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-phone">
+                        <div class="mb-3">
+                            <label for="phone" class="formbuilder-text-label">Phone No.<span
+                                    class="formbuilder-required">*</span><span class="tooltip-element"
+                                    tooltip="This service is available in India only ">?</span></label>
+                            <input type="tel" placeholder="your phone no. (without country code)" class="form-control"
+                                name="phone" access="false" maxlength="10" id="phone"
+                                title="This service is available in India only " required="required"
+                                aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-radio-group form-group field-gender">
+                        <div class="mb-3">
+                            <label for="gender" class="formbuilder-radio-group-label">Gender<span
+                                    class="formbuilder-required">*</span></label>
+                            <div class="radio-group">
+                                <div class="formbuilder-radio-inline">
+                                    <input name="gender" access="false" id="gender-0" required="required"
+                                        aria-required="true" value="Male" type="radio">
+                                    <label for="gender-0">Male</label>
+                                </div>
+                                <div class="formbuilder-radio-inline">
+                                    <input name="gender" access="false" id="gender-1" required="required"
+                                        aria-required="true" value="Female" type="radio">
+                                    <label for="gender-1">Female</label>
+                                </div>
+                                <div class="formbuilder-radio-inline">
+                                    <input name="gender" access="false" id="gender-2" required="required"
+                                        aria-required="true" value="Other" type="radio">
+                                    <label for="gender-2">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-DLNumber">
+                        <div class="mb-3">
+                            <label for="DLNumber" class="formbuilder-text-label">DL no.<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="text" placeholder="Driving License No." class="form-control" name="DLNumber"
+                                access="false" id="DLNumber" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-date form-group field-issueDate">
+                        <div class="mb-3">
+                            <label for="issueDate" class="formbuilder-date-label">Issue Date<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="date" class="form-control" name="issueDate" access="false" id="issueDate"
+                                required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-date form-group field-validity">
+                        <div class="mb-3">
+                            <label for="validity" class="formbuilder-date-label">Validity<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="date" class="form-control" name="validity" access="false" id="validity"
+                                required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-password">
+                        <div class="mb-3">
+                            <label for="password" class="formbuilder-text-label">Password<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="password" placeholder="Password for login" class="form-control" name="password"
+                                access="false" id="password" required="required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-text form-group field-confirmPassword">
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="formbuilder-text-label">Confirm Password<span
+                                    class="formbuilder-required">*</span></label>
+                            <input type="password" placeholder="Confirm Password" class="form-control"
+                                name="confirmPassword" access="false" id="confirmPassword" required="required"
+                                aria-required="true">
+                        </div>
+                    </div>
+                    <div class="formbuilder-button form-group field-submit">
+                        <div class="mb-3">
+                            <button type="submit" class="btn-primary btn" name="submit" access="false" value="Register"
+                                style="info" id="submit">SUBMIT</button>
+                        </div>
+                    </div>
+                    <div class="formbuilder-button form-group field-reset">
+                        <div class="mb-3">
+                            <button type="reset" class="btn-danger btn" name="reset" access="false" style="danger"
+                                id="reset">RESET</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    {{!-- </div> --}}
+    {{>footJs}}
+</body>
+
+</html>

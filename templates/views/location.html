@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <div style="color:red;text-align:center"><strong>READ ME</strong>: Please change your own API Key inside the script tags where it says [YOUR_API_KEY] & enabled Directions API from Cloud Console </div>  -->
+
+
+<div id="map" style="height:100vh"></div>
+  
+<script src=" https://maps.googleapis.com/maps/api/js?key=AIzaSyCk51nD6bbh594y7F-jld1lrw-1l0zliGU"></script>
+<script>
+  
+
+
+const map = new google.maps.Map(document.getElementById("map"), {
+    center: new google.maps.LatLng(45.4215296, -75.6971931),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+});
+
+const directionsService = new google.maps.DirectionsService();
+
+directionsService.route(
+    {
+            origin: "272 Bronson Ave, Ottawa, Canada",
+            destination: "1385 Woodroffe Ave, Nepean, Canada",
+            travelMode: "DRIVING",
+    },
+    (response, status) => {
+        if (status === "OK") {
+
+            new google.maps.DirectionsRenderer({
+                suppressMarkers: true,
+                directions: response,
+                map: map,
+              });
+        }
+    }
+)
+</script>
+</body>
+</html>

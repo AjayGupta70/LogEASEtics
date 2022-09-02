@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>header}}
+
+</head>
+
+<body class="bgm-img" >
+  {{>navbar}}
+  <div class="container2">
+
+    <div class="row container2">
+      <div class="col-md-5 col-12 ovrl2">
+        <h1 class="par"> LogEASEtics </h1>
+        <p style="font-family:Fiera-code"> Students Innovation For Better Transport And Logistics<br>
+          
+        </p>
+        <p style="font-size: large;">Interface that provides day to day travellers<br> who are travelling through the same route to deliver<br> the packaged goods to the reciever and earn some incentive.</p>
+      </div>
+      <div class="col-md-4 col-12 mb-2">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../css/img/bg.jpg"  style="border-radius: 1rem;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../css/img/img4.jpg"  style="border-radius: 1rem;"  class="d-block w-100 h=100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../css/img/img3.jpg"  style="border-radius: 1rem;" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    let prL = document.getElementById('lod')
+    let prt = document.getElementById('lad')
+    function myfun(){
+      setTimeout(()=>{
+        prL.style.display = 'none';
+        prt.style.display = 'none';
+      }, 2000)
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
